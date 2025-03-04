@@ -2,7 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('/Imagenes/fondo.png');
+    background-size: url("/imagenes/fondo.png") no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -18,7 +19,7 @@ body {
 .pokedex-img {
     width: 300px; /* Ajusta el tamaño según sea necesario */
     position: absolute;
-    top: 140px;
+    top: 180px;
     left: 0px;
 }
 
@@ -50,7 +51,7 @@ h1 {
 
 /* Estil per al contenedor de Pokémon */
 .pokemon-name {
-    margin-top: 280px; /* Espai superior */
+    margin-top: 320px; /* Espai superior */
     text-align: left; /* Alinear el text a l'esquerra */
     margin-left: 25px; /* Espai a la dreta */
 }
@@ -126,6 +127,8 @@ h1 {
     width: 100%; /* Ocupa el 100% del ancho del contenedor */
     margin-bottom: 20px; /* Espacio inferior */
     text-decoration: none; /* Eliminar subrayado */
+    background:none; /* Fondo transparente */
+    color: black; /* Color de texto*/
 }
 
 /* Estilo para la descripción */
