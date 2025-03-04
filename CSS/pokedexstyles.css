@@ -2,8 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('/Imagenes/fondo.png') no-repeat center center fixed; /* Imagen de fondo */
-    background-size: cover;
+    background-image: url('/Imagenes/fondo.png');
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -126,6 +125,7 @@ h1 {
     text-align: center; /* Centrar el título */
     width: 100%; /* Ocupa el 100% del ancho del contenedor */
     margin-bottom: 20px; /* Espacio inferior */
+    text-decoration: none; /* Eliminar subrayado */
 }
 
 /* Estilo para la descripción */
