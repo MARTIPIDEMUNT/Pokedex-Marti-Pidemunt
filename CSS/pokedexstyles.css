@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/Imagenes/fondo.png') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* Contenedor principal de la Pokédex */
+.pokedex-container {
+    position: relative;
+    padding-top: 50px;
+}
+
+/* Imagen de la Pokédex */
+.pokedex-img {
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    position: absolute;
+    top: 140px;
+    left: 0px;
+}
+
+/* Título de la Pokédex */
+h1 {
+    font-size: 32px;
+    background: rgb(80, 70, 70);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Contenedor de Pokémon */
+.pokedex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 80px;
+    color: white;
+}
+
+/* Estilos de las imágenes de los Pokémon */
+.pokedex img {
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estil per al contenedor de Pokémon */
+.pokemon-name {
+    margin-top: 280px; /* Espai superior */
+    text-align: left; /* Alinear el text a l'esquerra */
+    margin-left: 25px; /* Espai a la dreta */
+}
+
+/* Estil per als enllaços de Pokémon */
+.pokemon-name a {
+    display: block; /* Mostrar els enllaços com a blocs */
+    color: #fff; /* Color de text blanc */
+    text-decoration: none; /* Treure la subratllat dels enllaços */
+    margin: 10px 0; /* Espai entre els enllaços */
+}
+
+.pokemon-name a:hover {
+    text-decoration: underline; /* Subratllar els enllaços en passar el ratolí */
+}
+
+/* Contenedor para la página individual de cada Pokémon */
+.pokemon-container {
+    background-color: #F7E6C4; /* Color de fondo similar al de la imagen */
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la ventana */
+    width: 100vw; /* Asegura que el contenedor ocupe el 100% del ancho de la ventana */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinear el contenido al centro */
+    justify-content: center; /* Centrar verticalmente */
+    padding: 20px; /* Espacio alrededor */
+    box-sizing: border-box; /* Incluir el padding en el tamaño total */
+    margin: 0; /* Eliminar márgenes */
+}
+
+/* Imagen del Pokémon */
+.pokemon-img {
+    width: 250px;
+    margin: 20px 0; /* Espacio superior e inferior */
+    align-self: flex-start; /* Alinear la imagen a la izquierda */
+}
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+}
+
+/* Estilo para el tipo de Pokémon */
+.tipo-fuego {
+    background-color: #FF9900;
+    color: white;
+    padding: 5px 10px;
+    text-align: left;
+    align-self: flex-start; /* Alinear el tipo a la izquierda */
+}
+
+/* Botón de volver */
+.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; /* Centrar el texto del botón */
+}
+
+.boton-volver:hover {
+    background-color: darkred;
+}
+
+/* Estilo para el título */
+.pokemon-title {
+    text-align: center; /* Centrar el título */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para la descripción */
+.pokemon-description {
+    text-align: left; /* Alinear la descripción a la izquierda */
+    align-self: flex-start; /* Alinear la descripción a la izquierda */
+    margin-top: 20px; /* Espacio superior */
+    color: black; /* Color de texto negro */
+}
